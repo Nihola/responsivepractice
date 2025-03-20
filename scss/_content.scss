@@ -1,0 +1,71 @@
+.content .content__inner{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 0px;
+position: relative;
+}
+.kitchen__pic{
+    max-width: 160px;
+    height: 200px;
+}
+.content__image{
+max-width: 160px;
+    height: 200px;
+}
+.content__title{
+    max-width: 814px;
+    color: rgba(40, 43, 34, 1);
+    height: 141px;
+         font-weight: 600;
+        font-size: 36px;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: center;
+}
+.content__text{
+    max-width: 370px;
+    max-height: 108px;
+     color: rgba(40, 43, 34, 1);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 0%;
+}
+.content__list{
+    display: flex;
+    justify-content: space-between;
+}
+.content__item{
+    display: flex;
+    gap: 30px;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+        
+            border-top: 1px solid rgba(40, 43, 34, 0.3);
+            border-bottom: 1px solid rgba(40, 43, 34, 0.3);
+
+}
+.content__item:nth-child(2){
+    border-left: 1px solid rgba(40, 43, 34, 0.3);
+    border-top: 1px solid rgba(40, 43, 34, 0.3) ;
+    border-bottom: 1px solid rgba(40, 43, 34, 0.3);
+}
+.dot__pic{
+    max-width: 18px;
+    max-height: 18px;
+}
+.content__image{
+    position: absolute;
+        top: 30%;
+        right: -20px
+}
+.kitchen__pic{
+        position: absolute;
+            left: -40px;
+            top: 40px;
+}

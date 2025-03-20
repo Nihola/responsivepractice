@@ -1,0 +1,48 @@
+.page{
+    background: rgba(61, 74, 57, 1);
+}
+.page .page__inner{
+    margin-top: 100px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.page__title{
+    max-width: 626px; 
+        font-weight: 600px;
+        font-size: 46px;
+        line-height: 125%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 1);
+}
+.page__text{
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 220px;
+        height: 31px;
+}
+.page__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.page__item{
+    width: 30%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+}
+.page__pic{
+    max-width: 66px;
+    height: 66px;
+}

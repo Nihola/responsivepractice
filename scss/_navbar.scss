@@ -1,0 +1,26 @@
+.navbar{
+    background: white;
+}
+.navbar .navbar__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+   width: 100%;    
+}
+
+.navbar__list {
+    gap: 40px;
+    display: flex;
+    align-items: center;
+}
+.navbar__box a{
+    color: rgba(61, 74, 57, 1);
+}
+.navbar__list a {
+    color: black;
+}
+.navbar__box{
+    display: flex;
+    gap: 10px;
+}
