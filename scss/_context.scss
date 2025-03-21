@@ -1,87 +1,228 @@
  input[type="file"] {
      display: none;
  }
- #label{
-    color: rgba(255, 255, 255, 0.5);
- padding-left: 5px;
-    font-weight: 500px;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0%;
-        cursor: pointer;
-        border-radius: 5px;
-        display: inline-block;
-    }
-.context__left{
-    background: rgba(61, 74, 57, 1);
-}
-label{
-    color:rgba(255, 255, 255, 0.5);
-}
-input{
-    background: transparent;
-    border: none;
-    border-bottom: 0.5px solid rgb(210, 210, 210);
-}
-.context__button{
- 
-        font-weight: 700px;
-        font-size: 16px;
-        line-height: 100%;
-        letter-spacing: 0%;
-color: rgba(255, 255, 255, 1);
-}
-.context__button{
-    background: rgba(174, 123, 60, 1);
-    box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.05);
+
+ #label {
+     color: rgba(255, 255, 255, 0.5);
+     padding-left: 5px;
+     font-weight: 500px;
+     font-size: 14px;
+     line-height: 100%;
+     letter-spacing: 0%;
+     cursor: pointer;
+     border-radius: 5px;
+     display: inline-block;
+ }
+
+ .context__left {
+     background: rgba(61, 74, 57, 1);
+     width: 50%;
+ }
+
+ label {
+     color: rgba(255, 255, 255, 0.5);
+ }
+
+ input {
+     background: transparent;
+     border: none;
+     border-bottom: 0.5px solid rgb(210, 210, 210);
+ }
+
+ .context__button {
+
+     font-weight: 700px;
+     font-size: 16px;
+     line-height: 100%;
+     letter-spacing: 0%;
+     color: rgba(255, 255, 255, 1);
+ }
+
+ .context__button {
+     background: rgba(174, 123, 60, 1);
+     box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.05);
      padding: 15px 40px;
      text-align: center;
-}
-.discussion__pic{
-    width: 50%;
-    
-}
-.context__left{
-    display: flex;
-    flex-direction: column;     
-    justify-content: center;
-        align-items: center;
-    width: 50%;
-    gap: 20px;
-    padding: 40px 0;
-}
-.context__title{
-    width: 376px;
- color: white;
-    font-weight: 600px;
-    font-size: 46px;
-    letter-spacing: 0%;
-    text-transform: uppercase;
-}
-.context .context__inner{
-    display: flex;
-margin-top: 60px;
-    justify-content: space-between;
-}
-.context__text{
- width: 376px;
-        font-weight: 500px;
-        font-size: 16px;
-        letter-spacing: 0%;
-        margin: 0;
-        color: rgba(255, 255, 255, 0.5);
-}
-.context__form{
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-}
-.context__box{
-    display: flex;
-    gap: 10px;
-    
-    justify-content: center;
-}
-.context__info{
-    color: white;
-}
+ }
+
+ .discussion__pic {
+     width: 50%;
+
+ }
+
+ .context__left {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 50%;
+     gap: 20px;
+     padding: 40px 0;
+ }
+
+ .context__title {
+     max-width: 376px;
+     color: white;
+     font-weight: 600px;
+     font-size: 46px;
+     letter-spacing: 0%;
+     text-transform: uppercase;
+ }
+
+ .context .context__inner {
+     display: flex;
+     margin-top: 60px;
+     justify-content: space-between;
+ }
+
+ .context__text {
+     max-width: 376px;
+     font-weight: 500px;
+     font-size: 16px;
+     letter-spacing: 0%;
+     margin: 0;
+     color: rgba(255, 255, 255, 0.5);
+ }
+
+ .context__form {
+     display: flex;
+     flex-direction: column;
+     gap: 35px;
+ }
+
+ .context__box {
+     display: flex;
+     gap: 10px;
+     justify-content: center;
+ }
+
+ .context__info {
+     color: white;
+ }
+
+ @media(max-width:1000px) {
+     .context .context__inner {
+         max-width: 1000px;
+     }
+
+     .context__left {
+         max-width: 500px;
+         padding-right: 100px;
+         padding-left: 5px;
+     }
+
+     .context__text {
+
+         font-size: 14px;
+
+     }
+
+     .context__info {
+         max-width: 270px;
+         font-size: 12px;
+     }
+
+     .context__title {
+         font-size: 36px;
+
+     }
+
+     .context__button {
+
+         padding: 10px 30px;
+
+     }
+ }
+ @media(max-width:740px){
+    .context .context__inner{
+        max-width: 740px;
+         
+    }
+    .context__left{
+        padding-right: 0;
+    }
+    .context__form input{
+        max-width: 200px;
+    }
+    .context__title{
+        max-width: 266px;
+    }
+    .context__text{
+        max-width: 266px;
+    }
+    .context__info{
+        max-width: 266px;
+    }
+    .context__button{
+        max-width: 266px;
+        padding: 20px 30px;
+    }
+
+ }
+
+  @media(max-width:584px) {
+      .context .context__inner {
+          max-width: 584px;
+
+      }
+ 
+
+      .context__form input {
+          max-width: 100px;
+      }
+
+      .context__title {
+          max-width: 190px;
+        font-size: 14px;
+      }
+
+      .context__text {
+          max-width: 190px;
+        font-size: 12px;
+      }
+
+      .context__info {
+          max-width: 210px;
+          font-size: 12px;
+      }
+
+      .context__button {
+          max-width: 120px;
+          padding: 10px 14px;
+      }
+
+  }
+  @media(max-width:340px){
+    .context .context__inner{
+        display: flex;
+        flex-direction: column;
+        max-width: 340px;
+    }
+                  .context__form input {
+                      max-width: 150px;
+                  }
+        
+                  .context__title {
+                      max-width: 190px;
+                      font-size: 14px;
+                  }
+        
+                  .context__text {
+                      max-width: 190px;
+                      font-size: 12px;
+                  }
+        
+                  .context__info {
+                      max-width: 210px;
+                      font-size: 12px;
+                  }
+        
+                  .context__button {
+                      max-width: 120px;
+                      padding: 10px 14px;
+                  }
+
+
+
+
+  }

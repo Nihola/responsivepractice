@@ -1,21 +1,39 @@
 .navbar{
+    display: flex;
+        align-items: center;
+        justify-content: center;
     background: white;
+    width: 100%;
 }
 .navbar .navbar__inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
-   width: 100%;    
+     width: 100%;    
+     gap: 30px;
 }
 
 .navbar__list {
     gap: 40px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+}
+.navbar__list a{
+ 
+    font-weight: 500px;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
 }
 .navbar__box a{
     color: rgba(61, 74, 57, 1);
+}
+.logo{
+    max-width: 122px;
+    margin-right: auto;
 }
 .navbar__list a {
     color: black;
@@ -23,4 +41,74 @@
 .navbar__box{
     display: flex;
     gap: 10px;
+    margin-left: auto;
+        /* Pushes to the right */
+        justify-content: center;
+        align-items: center;
+}
+.bars {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    display: none;
+}
+
+.bar {
+    margin: 10px;
+    border: 1px solid black;
+    width: 35px;
+}
+
+@media(max-width:1000px){
+    .navbar .navbar__inner{
+        max-width: 960px;
+        gap: 15px;
+    }
+    .navbar__list{
+        gap: 20px;
+    }
+    .navbar__list a,.navbar__box a{
+        font-size: 12px;
+    }
+}
+@media(max-width:677px){
+    .navbar .navbar__inner{
+        max-width: 637px;
+        gap: 5px;
+    }
+        .navbar__list {
+            display: none;
+        }
+        .bars{
+            display: block;
+        }
+    
+        .navbar__list a,
+        .navbar__box a {
+            font-size: 20px;
+        }
+}
+@media(max-width:405px) {
+
+.navbar__list a,
+    .navbar__box a {
+        font-size: 14px;
+    }
+}
+@media(max-width:325px){
+        .navbar .navbar__inner {
+                max-width: 320px;
+                
+            }
+    .carousel-control-prev{
+        display: none;
+    }
+    .carousel-control-next{
+        display: none;
+        
+    }
+ 
+    .navbar__box{
+        display: none;
+    }
 }
