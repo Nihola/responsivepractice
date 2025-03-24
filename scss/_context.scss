@@ -13,6 +13,13 @@
      border-radius: 5px;
      display: inline-block;
  }
+//  .context{
+// background: linear-gradient(to right, rgba(61, 74, 57, 1) 50%, transparent 50%),
+//         url(../resources/discussion.png);
+//     background-size: contain;
+//     background-position: right;
+//     background-repeat: no-repeat;
+//  }
 
  .context__left {
      background: rgba(61, 74, 57, 1);
@@ -47,8 +54,14 @@
 
  .discussion__pic {
      width: 50%;
-
+ object-fit: cover;
+object-position: center left;
  }
+  .discussion__picture{
+      width: 50%;
+      object-fit: cover;
+      object-position: center top;
+  }
 
  .context__left {
      display: flex;
@@ -69,7 +82,7 @@
      text-transform: uppercase;
  }
 
- .context .context__inner {
+ .context{
      display: flex;
      margin-top: 60px;
      justify-content: space-between;
@@ -101,7 +114,7 @@
  }
 
  @media(max-width:1000px) {
-     .context .context__inner {
+     .context{
          max-width: 1000px;
      }
 
@@ -112,7 +125,6 @@
      }
 
      .context__text {
-
          font-size: 14px;
 
      }
@@ -128,13 +140,12 @@
      }
 
      .context__button {
-
          padding: 10px 30px;
 
      }
  }
  @media(max-width:740px){
-    .context .context__inner{
+    .context{
         max-width: 740px;
          
     }
@@ -159,9 +170,8 @@
     }
 
  }
-
   @media(max-width:584px) {
-      .context .context__inner {
+      .context{
           max-width: 584px;
 
       }
@@ -192,11 +202,11 @@
       }
 
   }
-  @media(max-width:340px){
+  @media(max-width:339px){
     .context .context__inner{
         display: flex;
         flex-direction: column;
-        max-width: 340px;
+        max-width: 339px;
     }
                   .context__form input {
                       max-width: 150px;
@@ -216,11 +226,16 @@
                       max-width: 210px;
                       font-size: 12px;
                   }
-        
                   .context__button {
-                      max-width: 120px;
-                      padding: 10px 14px;
+                      max-width: 201px;
+                      margin-left: 20px;
+                      margin-right: 20px;
+                       
                   }
+                  .context__form{
+                    max-width: 330px;
+                  }
+               
 
 
 

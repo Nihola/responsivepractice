@@ -52,7 +52,7 @@
 
         <div class="carousel-inner">
             <div class="carousel-item active"
-                style="background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./resources/background.png);">
+                style="background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./resources/background.png);background-size: cover; background-position: center; background-repeat: no-repeat;">
                 <div class="carousel-content">
                     <h1>виробництвомеблівe</h1>
                     <p>Ми виконуємо комплексне виготовлення корпусних меблів для житлових і комерційних приміщень,
@@ -62,7 +62,7 @@
                 </div>
             </div>
             <div class="carousel-item"
-                style="background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./resources/background.png);">
+                style="background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./resources/background.png);background-size: cover; background-position: center;">
                 <div class="carousel-content">
                     <h1>виробництвомеблівe</h1>
                     <p>Ми виконуємо комплексне виготовлення корпусних меблів для житлових і комерційних приміщень,
@@ -73,7 +73,7 @@
                 </div>
             </div>
             <div class="carousel-item"
-                style="background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./resources/background.png);">
+                style="background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./resources/background.png); background-size: cover;">
                 <div class="carousel-content">
                     <h1>виробництвомеблівe</h1>
                     <p>Ми виконуємо комплексне виготовлення корпусних меблів для житлових і комерційних приміщень,
@@ -241,34 +241,32 @@
         </div>
     </div>
     <div class="context">
-        <div class="container">
-            <div class="context__inner">
-                <div class="context__left">
-                    <h4 class="context__title">
-                        Обговоримо ваш проект?
-                    </h4>
-                    <p class="context__text">
-                        Заповніть форму і найближчим часом ми зв'яжемося з вами!
-                    </p>
-                    <form action="#" class="context__form">
-                        <input type="text" placeholder="Ім'я">
-                        <input type="tel" placeholder="Номер телефону">
-                        <div class="input__file">
-                            <i class="fa-solid fa-file" style="color: #eff3f5;"></i>
-                            <label for="fileUpload" id="label">Прикріпити проект</label>
-                            <input type="file" id="fileUpload" onchange="updateLabel(this)">
-                        </div>
-                        <a href="#" class="context__button">Відправити</a>
-                        <div class="context__box">
-                            <i class="fa-regular fa-square-caret-up" style="color: #ffffff;"></i>
-                            <p class="context__info">Даю згоду на оброблення персональних даних</p>
-                        </div>
-                    </form>
+        <div class="context__left">
+            <h4 class="context__title">
+                Обговоримо ваш проект?
+            </h4>
+            <p class="context__text">
+                Заповніть форму і найближчим часом ми зв'яжемося з вами!
+            </p>
+            <form action="#" class="context__form">
+                <input type="text" placeholder="Ім'я">
+                <input type="tel" placeholder="Номер телефону">
+                <div class="input__file">
+                    <i class="fa-solid fa-file" style="color: #eff3f5;"></i>
+                    <label for="fileUpload" id="label">Прикріпити проект</label>
+                    <input type="file" id="fileUpload" onchange="updateLabel(this)">
                 </div>
-                <img src="./resources/discussion.png" alt="" class="discussion__pic">
-            </div>
+                <a href="#" class="context__button">Відправити</a>
+                <div class="context__box">
+                    <i class="fa-regular fa-square-caret-up" style="color: #ffffff;"></i>
+                    <p class="context__info">Даю згоду на оброблення персональних даних</p>
+                </div>
+            </form>
         </div>
+        <img src="./resources/discussion.png" alt="" class="discussion__pic">
+
     </div>
+
     <div class="box">
         <div class="container">
             <div class="box__inner">
@@ -325,7 +323,7 @@
     <div class="section">
         <div class="container">
             <div class="section__inner section__list">
-                <li class="section__item oval">
+                <li class="oval">
                     <img src="./resources/Ellipse 4.png" alt="" class="ellipse__left">
                     <img src="./resources/toaster.png" alt="" class="section__pic">
                     <div class="sectionitem__inner">
@@ -343,7 +341,7 @@
                     </p>
                     <a href="#" class="context__button">Хочу подарунок</a>
                 </li>
-                <li class="section__item oval">
+                <li class="oval">
                     <img src="./resources/oven.png" alt="" class="section__pic">
                     <div class="sectionitem__inner">
                         <i class="fa-solid fa-gift"></i>
@@ -374,29 +372,134 @@
         </div>
     </div>
     <div class="context">
-        <div class="container">
-            <div class="context__inner">
-                <div class="context__left">
-                    <h4 class="context__title">
-                        Залишилися питання?
-                    </h4>
-                    <p class="context__text">
-                        Отримай безкоштовну консультацію менеджера та прорахунок проекту
-                    </p>
-                    <form action="#" class="context__form">
-                        <input type="text" placeholder="Ім'я">
-                        <input type="tel" placeholder="Номер телефону">
-                        <a href="#" class="context__button">Відправити</a>
-                        <div class="context__box">
-                            <i class="fa-regular fa-square-caret-up" style="color: #ffffff;"></i>
-                            <p class="context__info">Даю згоду на оброблення персональних даних</p>
-                        </div>
-                    </form>
+        <div class="context__left">
+            <h4 class="context__title">
+                Залишилися питання?
+            </h4>
+            <p class="context__text">
+                Отримай безкоштовну консультацію менеджера та прорахунок проекту
+            </p>
+            <form action="#" class="context__form">
+                <input type="text" placeholder="Ім'я">
+                <input type="tel" placeholder="Номер телефону">
+                <a href="#" class="context__button">Відправити</a>
+                <div class="context__box">
+                    <i class="fa-regular fa-square-caret-up" style="color: #ffffff;"></i>
+                    <p class="context__info">Даю згоду на оброблення персональних даних</p>
                 </div>
-                <img src="./resources/girlwithlaptop.png" alt="" class="discussion__pic">
+            </form>
+        </div>
+        <img src="./resources/girlwithlaptop.png" alt="" class="discussion__picture">
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__main">
+                    <a href="#"><img src="./resources/logo.png" alt="" class="footer__logo"></a>
+                    <div class="footer__box">
+                        <p class="footer__info">Соцмережі:</p>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                 </div>
+
+                 </div>
+
+                
+                <div class="footer__content">
+                                        <li class="footer__item">
+                                            <a href="#">Основні напрямки</a>
+                                            <a href="#">Про компанію</a>
+                                            <a href="#">Переваги</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Етапи роботи</a>
+                                            <a href="#">Зараз в роботі</a>
+                                            <a href="#">Стати партнером</a>
+                                        </li>
+                </div>
+                <div class="footer__wrapper">
+                    <li class="footer__item">
+                        <a href="#"><img src="./resources/logo.png" alt="" class="footer__logo"></a>
+                        <div class="footer__box">
+                            <p class="footer__info">Соцмережі:</p>
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Основні напрямки</a>
+                        <a href="#">Про компанію</a>
+                        <a href="#">Переваги</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Етапи роботи</a>
+                        <a href="#">Зараз в роботі</a>
+                        <a href="#">Стати партнером</a>
+                    </li>
+                </div>
+                <div class="footer__section" id="unique">
+
+                    <div class="footer__wrap">
+                        <a href="#"><i class="fa-solid fa-mobile"></i></a>
+                        <a href="tel:++380 67661 5415">+380 67661 5415</a>
+                    </div>
+                    <a href="#" class="context__button">На каву з менеджером!</a>
+
+
+                </div>
+                <ul class="footer__list">
+                    <li class="footer__item span">
+                        <a href="#"><img src="./resources/logo.png" alt="" class="footer__logo"></a>
+                        <div class="footer__box">
+                            <p class="footer__info">Соцмережі:</p>
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Основні напрямки</a>
+                        <a href="#">Про компанію</a>
+                        <a href="#">Переваги</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Етапи роботи</a>
+                        <a href="#">Зараз в роботі</a>
+                        <a href="#">Стати партнером</a>
+                    </li>
+                    <li class="column">
+                        <div class="footer__wrap">
+                            <a href="#"><i class="fa-solid fa-mobile"></i></a>
+                            <a href="tel:++380 67661 5415">+380 67661 5415</a>
+                        </div>
+                        <a href="#" class="context__button">На каву з менеджером!</a>
+
+                    </li>
+                </ul>
+                <div class="footer__boxes">
+                    <h5 class="footer__title">Бренди комплектуючих</h5>
+                    <div class="footer__collection">
+                        <img src="./resources/franklin.png" alt="" class="collect__img">
+                        <img src="./resources/hefele.png" alt="" class="collect__img">
+                        <img src="./resources/egger.png" alt="" class="collect__img">
+                        <img src="./resources/linken.png" alt="" class="collect__img">
+                        <img src="./resources/inoxa.png" alt="" class="collect__img">
+                        <img src="./resources/dollar-sign.png" alt="">
+                        <img src="./resources/cleaf.png" alt="" class="collect__img">
+                        <img src="./resources/samsung.png" alt="" class="collect__img">
+                        <img src="./resources/blum.png" alt="" class="collect__img">
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer__text">© 2021 Ringo</p>
+                    <p class="footer__name">Дизайн сайту</p>
+                </div>
             </div>
         </div>
-    </div>
+        </div>
+    </footer>
+
 
 
 

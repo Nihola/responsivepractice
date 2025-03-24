@@ -1,5 +1,5 @@
 .swiper {
-    width: 80%;
+    max-width: 80%;
     /* Adjust width */
     margin: auto;
     padding: 0px 0;
@@ -66,4 +66,15 @@ width: 100%;
 .swiper-button-next {
     right: -30px;
 }
- 
+
+@media(max-width:900px){
+    .sector .sector__inner{
+        max-width: 933px;
+    }
+    .swiper-slide img{
+        max-width: 933px;
+        object-fit: contain;
+        object-position: center;
+    }
+
+}

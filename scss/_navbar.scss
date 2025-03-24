@@ -95,20 +95,27 @@
         font-size: 14px;
     }
 }
-@media(max-width:325px){
-        .navbar .navbar__inner {
-                max-width: 320px;
-                
-            }
+@media(max-width:345px){
+    .navbar__list{
+        display: none;
+    }
+    .navbar .navbar__inner {
+                max-width: 330px;
+                display: flex;
+                justify-content: space-between;
+    }
     .carousel-control-prev{
         display: none;
     }
     .carousel-control-next{
         display: none;
-        
     }
- 
     .navbar__box{
         display: none;
     }
+        .bar {
+            margin: 10px;
+            border: 1px solid black;
+            width: 20px;
+        }
 }
